@@ -1,0 +1,46 @@
+body{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  height:100vh;
+  width:100%
+  background-color:red;
+}
+
+.course{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Maximum of 3 items per column */
+  grid-gap: 20px; /* Adjust the gap as needed */
+  place-items: center;
+  background-color:white;
+  padding:15px;
+}
+
+.card-container{
+   height:400px;
+   width:450px;
+   border:1px solid wheat;
+   border-radius:15px;
+}
+.image-holder{
+    height:400px;
+    width:50%;
+    background-size:cover;
+    background-position:center;
+    float:left;
+    border-radius:15px;
+}
+
+.image-holder img{
+    height:100%;
+    width:100%;
+    border-radius:15px;
+}
+.description{
+    height:400px;
+    width:40%;
+    float:left;
+    border-radius:15px;
+    padding:5px;
+}

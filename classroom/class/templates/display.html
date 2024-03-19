@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="course-details">
+        <p>TUTOR: {{ course.tutor }}</p>
+        <p>COURSE DESCRIPTION: {{ course.description }}</p>
+        <p>{{ course.caption1}}</p>
+        <video controls>
+        <source src="{{ course.video1.url }}" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <p>{{ course.caption2}}</p>
+        <video controls>
+        <source src="{{ course.video2.url }}" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        <p>{{ course.caption3}}</p>
+        <video controls>
+        <source src="{{ course.video3.url }}" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    <!-- Additional details if needed -->
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="nav">
+    <!-- Navigation content -->
+</div>
+<div class="course">
+    {% for course in courses %}
+    <div class="card-container">
+        <div class="image-holder">
+            <img src="{{ course.image.url }}" alt="">
+        </div>
+        <div class="description">
+            <p>{{ course.tutor }}</p>
+            <p>TUTOR: {{ course.tutor }}</p>
+            <p><a href="{% url 'display' course.serial %}">COURSE DESCRIPTION: {{ course.description }}</a></p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
